@@ -15,6 +15,7 @@ app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/ai",async (string prompt)=>{
 
+System.Console.WriteLine(prompt);
 
 
 string key = Environment.GetEnvironmentVariable("GEMINI_KEY");
